@@ -1,0 +1,36 @@
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  transition: all 0.2s ease-in-out;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.hidden {
+  opacity: 0;
+  margin-left: -14.5%;
+}
+
+.icon-btn.clicked .icon:first-child {
+  opacity: 0;
+}
+
+.icon-btn.clicked .icon:last-child {
+  opacity: 1;
+}
+
+button {
+  position: relative;
+}
+
+.bi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

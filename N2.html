@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Кнопка с выводом размеров экрана</title>
+  </head>
+  <body>
+    <button onclick="showScreenSize()">Показать размер экрана</button>
+    <script>
+      function showScreenSize() {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        alert("Размер экрана: " + width + " x " + height);
+      }
+    </script>
+  </body>
+</html>
